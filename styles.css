@@ -1,0 +1,93 @@
+body{
+    background-image: url(img/background.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    text-align: center;
+    background-color: #000000;
+    padding: 20px;
+}
+
+main {
+    padding: 20px;
+}
+
+section {
+    margin: 0 auto;
+}
+
+footer {
+    background-color: #000000;
+    padding: 10px;
+    text-align: center;
+    flex-shrink: 0;
+
+}
+
+#texto{
+    width: 400px;
+    height: 200px;
+    resize: both;
+    overflow: auto;
+    border-radius: 5px;
+
+}
+
+#resultado{
+    width: 200px;
+    height: 200px;
+    resize: both;
+    overflow: auto;
+    border-radius: 5px;
+
+}
+
+#buttons{
+    text-align: center;
+}
+
+#buttons button{
+    margin: 20px;
+    width: 150px;
+    height: 30px;
+    border-radius: 5px;
+    background-color: deepskyblue;
+
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction:row;
+  }
+  
+  .entradas {
+    flex: 1;
+    margin-right: 10px;
+  }
+  
+  .resultados {
+    flex: 1;
+    margin-left: 15px;
+  }
+
+/* Estilos responsivos */
+@media only screen and (max-width: 600px) {
+    /* Estilos para pantallas más pequeñas */
+    section {
+        max-width: 100%;
+        padding: 10px;
+    }
+}

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <title>Encriptador ALURA</title>
+</head>
+<body>
+    <header>
+        <h1>Este es el encriptador de Alura</h1>
+    </header>
+    <main>
+        <section >
+            <div class="container">
+                <div class="entradas">
+                    <label for="Texto">Escribe o pega aquí el texto a encriptar o desencriptar:</label><br>
+                    <textarea id="texto" placeholder="Escribe aquí el texto a encriptar o desencriptar"></textarea>
+                </div>
+                <div class="resultados">
+                    <label for="resultado">Este es el resultado</label><br>
+                    <textarea id="resultado" placeholder="Aqui se verá el resultado..."></textarea>
+                </div>  
+                <br>
+            </div>
+            <div id="buttons">
+                <button onclick="encriptar()">Encriptar</button>
+                <button onclick="desencriptar()">Desencriptar</button>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>Este es un proyecto de prueba para aprender Javascript</p>
+    </footer>
+    <script src="scripts.js"></script>
+</body>
+</html>
