@@ -5,10 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
     <title>Encriptador ALURA</title>
 </head>
 <body>
     <header>
+        <img src="img/a.jpeg" alt="Logo de Alura" id="logo">
         <h1>Este es el encriptador de Alura</h1>
     </header>
     <main>
@@ -16,7 +18,7 @@
             <div class="container">
                 <div class="entradas">
                     <label for="Texto">Escribe o pega aquí el texto a encriptar o desencriptar:</label><br>
-                    <textarea id="texto" placeholder="Escribe aquí el texto a encriptar o desencriptar"></textarea>
+                    <textarea id="texto" placeholder="Escribe aquí el texto a encriptar o desencriptar, sólo mayúsculas y sin acentos..."></textarea>
                 </div>
                 <div class="resultados">
                     <label for="resultado">Este es el resultado</label><br>
@@ -27,11 +29,20 @@
             <div id="buttons">
                 <button onclick="encriptar()">Encriptar</button>
                 <button onclick="desencriptar()">Desencriptar</button>
+                <button onclick="copiarTexto()">Copiar</button>
+                <button onclick="pegarTexto()">Pegar</button>
             </div>
         </section>
     </main>
     <footer>
-        <p>Este es un proyecto de prueba para aprender Javascript</p>
+        <div class="footer-content">
+            <p>Proyecto encriptador realizado con Javascript</p>
+            <div class="social-icons">
+                <a href="https://www.facebook.com/emmanuel.figueroa.33886" target="_blank" class="icon"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://linkedin.com/in/emmanuel-figueroa-633327191" target="_blank" class="icon"><i class="fab fa-linkedin-in"></i></a>
+                <a href="https://github.com/xxxKIKO" target="_blank" class="icon"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
     </footer>
     <script src="scripts.js"></script>
 </body>
